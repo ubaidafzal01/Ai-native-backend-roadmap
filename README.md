@@ -7,7 +7,7 @@
 My six-semester plan to go from C++ coursework to a job-ready backend engineer:
 Java, Spring Boot, databases, distributed systems, cloud infrastructure and AI-assisted engineering.
 
-### 🌐 [ubaidafzal01.github.io/ai-native-backend-roadmap](https://ubaidafzal01.github.io/ai-native-backend-roadmap/)
+### 🌐 [ubaidafzal01.github.io/Ai-native-backend-roadmap](https://ubaidafzal01.github.io/Ai-native-backend-roadmap/)
 
 ![Roadmap overview](screenshots/overview.jpg)
 
@@ -52,8 +52,8 @@ Java, Spring Boot, databases, distributed systems, cloud infrastructure and AI-a
 ## 🚀 Run locally
 
 ```bash
-git clone https://github.com/ubaidafzal01/ai-native-backend-roadmap.git
-cd ai-native-backend-roadmap
+git clone https://github.com/ubaidafzal01/Ai-native-backend-roadmap.git
+cd Ai-native-backend-roadmap
 python3 -m http.server 8000
 ```
 
