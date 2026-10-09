@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AI-Native Backend Roadmap · Ubaid Afzal</title>
   <meta name="description" content="Ubaid Afzal's six-semester roadmap to becoming an AI-native backend systems engineer: Java, Spring Boot, distributed systems, cloud and AI engineering." />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=1" />
 </head>
 <body>
   <!-- Fluid "ink" cursor effect (fluid.js), same as the portfolio -->
@@ -208,13 +208,19 @@
             <div class="sem-col">
               <div class="project">
                 <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Event-Driven Payment Microservices</h4>
+                <p>Separate account, payment, ledger and notification services that talk through Kafka: a saga coordinates each transfer with compensation on failure, the transactional outbox guarantees events are published, idempotency keys stop duplicate payments, retries use backoff with a dead-letter topic, and a double-entry ledger is reconciled automatically.</p>
+                <div class="guides"><a class="guide" href="https://www.youtube.com/watch?v=YbSC1OsLp20" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>Spring Boot Microservices Full Course · Kafka event-driven</b><small>Java Guides · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a><a class="guide" href="https://www.youtube.com/watch?v=01jVbPHr3hc" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>Transactional Outbox Pattern · hands-on</b><small>Java Techie · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a><a class="guide" href="https://www.youtube.com/watch?v=JtTIXwZtScY" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>Saga Orchestration in Microservices</b><small>Java Techie · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+              </div>
+              <div class="note why"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><div><span class="note-label">Why this semester</span><p>Puts every course of this semester into one system: microservices communication, Kafka, consistency and fault tolerance, isolation, idempotency, the outbox and payment ledgers.</p></div></div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Demonstrate why retries don&#x27;t result in duplicate transfers and how the ledger remains consistent, even when a service crashes mid-transfer.</p></div></div>
+              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Aim to obtain a backend internship by this stage. Apply more widely than Tamara so you gain real team experience.</p></div></div>
+              <div class="side">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>AI track side project</span>
                 <h4>Build Self-Learning AI Agents (Python)</h4>
-                <p>A Python agent that calls tools with structured outputs, stores what worked and what failed in memory, and uses that feedback to improve on later runs, with clear permissions on what it may do.</p>
+                <p>A Python agent that calls tools with structured outputs and learns from what worked on earlier runs: practice for this semester&#x27;s AI track (Python, LLM APIs, tool calling).</p>
                 <div class="guides"><a class="guide" href="https://www.youtube.com/watch?v=ynhl8KjjS3Y" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>How to Build Self-Learning AI Agents (Python Tutorial)</b><small>Dave Ebbelaar · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
               </div>
-              <div class="note why"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><div><span class="note-label">Why this semester</span><p>Your AI engineering track starts Python, LLM APIs, structured outputs and tool calling this semester; this project uses all of them at once.</p></div></div>
-              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Show the agent measurably improving across runs, explain how its memory works, and demonstrate that it never acts outside its tool permissions.</p></div></div>
-              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Aim to obtain a backend internship by this stage. Apply more widely than Tamara so you gain real team experience.</p></div></div>
             </div>
           </div>
         </article>
@@ -242,13 +248,19 @@
             <div class="sem-col">
               <div class="project">
                 <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Scalable URL Shortener</h4>
+                <p>A bit.ly-style service written in Go: Base62 short codes, a load balancer in front of stateless instances, Redis cache-aside for hot links, PostgreSQL sharded with consistent hashing, Kubernetes with autoscaling, OpenTelemetry tracing and metrics dashboards, and a k6 load test that pushes it to its limits.</p>
+                <div class="guides"><a class="guide" href="https://www.youtube.com/watch?v=HHUi8F_qAXM" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>How Does a URL Shortener Work?</b><small>ByteByteGo · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a><a class="guide" href="https://www.youtube.com/watch?v=Jvimt56KPnk" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>Consistent Hashing and Its Implementation From the First Principles</b><small>Arpit Bhayani · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
+              </div>
+              <div class="note why"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><div><span class="note-label">Why this semester</span><p>The classic system-design build: it exercises load balancing, caching, sharding, scaling, Kubernetes, observability and load testing, and gives you a real Go project once your Java is strong.</p></div></div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Under load, explain p99 latency, cache hit rate and what happens when a shard or pod dies, using your own traces and metrics as evidence.</p></div></div>
+              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Begin serious preparation for Tamara-style Java, SQL, distributed-systems, and backend interviews.</p></div></div>
+              <div class="side">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>Optional systems side project</span>
                 <h4>C++ Compiler in C++</h4>
-                <p>A compiler for a small C-like language: lexer, parser, abstract syntax tree, semantic checks and x86-64 assembly generation, with a test suite of example programs.</p>
+                <p>A compiler for a small C-like language (lexer, parser, AST, x86-64 code generation) that builds on your COAL and DSA knowledge. lolzdev builds his in C; you write yours in C++.</p>
                 <div class="guides"><a class="guide" href="https://www.youtube.com/watch?v=J-_yoKCxhYk" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>Writing a C compiler from scratch</b><small>lolzdev · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a><a class="guide" href="https://www.youtube.com/watch?v=UW8LgC-S_co" target="_blank" rel="noopener"><svg class="yt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="#ff0033"/><path d="M10 9.2v5.6l4.8-2.8z" fill="#fff"/></svg><span><b>I made a C compiler in C</b><small>lolzdev · YouTube</small></span><svg class="ic g-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></div>
               </div>
-              <div class="note why"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><div><span class="note-label">Why this semester</span><p>The deepest systems project on the roadmap: it builds directly on your COAL assembly knowledge and DSA trees, and sharpens the performance-profiling skills from this semester. lolzdev builds his compiler in C; you write yours in C++.</p></div></div>
-              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Your compiler turns test programs into working executables, and you can explain lexing, parsing, ASTs and code generation step by step.</p></div></div>
-              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Begin serious preparation for Tamara-style Java, SQL, distributed-systems, and backend interviews.</p></div></div>
             </div>
           </div>
         </article>
@@ -277,9 +289,9 @@
               <div class="project">
                 <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final capstone</span>
                 <h4>Production-Grade Distributed Redis</h4>
-                <p>Polish your strongest project. Recommended: turn your Semester 3 Redis into a distributed service with replication, persistence (snapshots and append-only log), Docker deployment, metrics and tracing, a load-test report, architecture diagrams and security notes.</p>
+                <p>Polish your strongest project. Recommended: turn your Semester 3 Redis into a distributed service with replication, persistence (snapshots and append-only log), Docker deployment, metrics and tracing, a load-test report, architecture diagrams and security notes. Alternative: harden the Semester 6 payment microservices to the same standard.</p>
               </div>
-              <div class="note why"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><div><span class="note-label">Why this semester</span><p>Brings the whole journey together: the Java of Semester 3, the storage ideas of Semester 4, the DevOps of Semester 5 and the distributed-systems theory of Semesters 6–7.</p></div></div>
+              <div class="note why"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><div><span class="note-label">Why this semester</span><p>Brings the whole journey together: the Java of Semester 3, the storage ideas of Semester 4, the DevOps of Semester 5, the microservices of Semester 6 and the system design of Semester 7.</p></div></div>
               <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Confidently defend every architectural decision and complete realistic technical interviews without AI help.</p></div></div>
               <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Apply for eligible Tamara junior engineering vacancies and graduate opportunities before graduation, while keeping other fintech and backend companies as parallel targets.</p></div></div>
             </div>
@@ -460,8 +472,20 @@
           <div class="res-group reveal c4">
             <p class="res-head"><span class="dot"></span>Semester 6 · Microservices + Kafka</p>
             <div class="res-grid">
-              <a class="res res-guide" href="https://www.youtube.com/watch?v=ynhl8KjjS3Y" target="_blank" rel="noopener">
+              <a class="res res-guide" href="https://www.youtube.com/watch?v=YbSC1OsLp20" target="_blank" rel="noopener">
                 <span class="res-topic">Final project guide</span>
+                <span class="res-name">Spring Boot Kafka Event-Driven Microservices</span>
+                <span class="res-meta">Java Guides · YouTube<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res res-guide" href="https://www.youtube.com/watch?v=01jVbPHr3hc" target="_blank" rel="noopener">
+                <span class="res-topic">Final project guide</span>
+                <span class="res-name">Transactional Outbox Pattern (hands-on)</span>
+                <span class="res-meta">Java Techie · YouTube<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res res-guide" href="https://www.youtube.com/watch?v=ynhl8KjjS3Y" target="_blank" rel="noopener">
+                <span class="res-topic">Side project guide</span>
                 <span class="res-name">How to Build Self-Learning AI Agents</span>
                 <span class="res-meta">Dave Ebbelaar · YouTube<span class="cost free">Free</span></span>
                 <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
@@ -531,8 +555,20 @@
           <div class="res-group reveal c5">
             <p class="res-head"><span class="dot"></span>Semester 7 · System Design + AI Agents</p>
             <div class="res-grid">
-              <a class="res res-guide" href="https://www.youtube.com/watch?v=J-_yoKCxhYk" target="_blank" rel="noopener">
+              <a class="res res-guide" href="https://www.youtube.com/watch?v=HHUi8F_qAXM" target="_blank" rel="noopener">
                 <span class="res-topic">Final project guide</span>
+                <span class="res-name">How Does a URL Shortener Work?</span>
+                <span class="res-meta">ByteByteGo · YouTube<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res res-guide" href="https://www.youtube.com/watch?v=Jvimt56KPnk" target="_blank" rel="noopener">
+                <span class="res-topic">Final project guide</span>
+                <span class="res-name">Consistent Hashing from First Principles</span>
+                <span class="res-meta">Arpit Bhayani · YouTube<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res res-guide" href="https://www.youtube.com/watch?v=J-_yoKCxhYk" target="_blank" rel="noopener">
+                <span class="res-topic">Side project guide</span>
                 <span class="res-name">Writing a C compiler from scratch</span>
                 <span class="res-meta">lolzdev · YouTube<span class="cost free">Free</span></span>
                 <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>

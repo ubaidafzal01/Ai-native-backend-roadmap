@@ -231,6 +231,15 @@ h1 {
 .res-guide { border-color: rgba(255, 0, 51, .25); background: linear-gradient(135deg, rgba(255, 241, 242, .8), rgba(255, 255, 255, .6)); }
 .res-guide .res-topic { color: #e11d48; }
 
+.side {
+  padding: 16px 18px; border-radius: 18px;
+  background: rgba(255, 255, 255, .55); border: 1px dashed #d4d4d8;
+}
+.side .note-label { color: var(--muted); }
+.side .note-label .ic { width: 16px; height: 16px; }
+.side h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.side p { color: var(--text-2); font-size: 14px; }
+
 /* ===== 3. Resources ===== */
 .callout {
   display: flex; align-items: center; gap: 10px;
