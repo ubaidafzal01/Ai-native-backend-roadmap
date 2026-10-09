@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI-Native Backend Roadmap · Ubaid Afzal</title>
+  <meta name="description" content="Ubaid Afzal's six-semester roadmap to becoming an AI-native backend systems engineer: Java, Spring Boot, distributed systems, cloud and AI engineering." />
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+  <!-- Fluid "ink" cursor effect (fluid.js), same as the portfolio -->
+  <canvas id="fluid" aria-hidden="true"></canvas>
+
+  <nav class="dock glass" id="dock" aria-label="Sections">
+    <a href="#glance"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg><span>Overview</span></a>
+    <a href="#plan"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><span>Semesters</span></a>
+    <a href="#resources"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span>Resources</span></a>
+    <a href="#weekly"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Weekly</span></a>
+    <a href="#checklist"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg><span>Checklist</span></a>
+    <a href="#strategy"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg><span>Strategy</span></a>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <header class="hero">
+      <p class="eyebrow glass reveal-hero" style="--d:0ms">FAST BSCS · Semester 3 to Semester 8 · October 2026 onward</p>
+      <p class="hero-kicker reveal-hero" style="--d:80ms">The Final Roadmap</p>
+      <h1 class="reveal-hero" style="--d:160ms">AI-Native Backend<br /><span class="grad">Systems Engineer</span></h1>
+      <div class="hero-cards reveal-hero" style="--d:260ms">
+        <div class="glass hero-card">
+          <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>Long-term specialization</span>
+          <p>AI-native backend engineering, distributed systems, and fintech infrastructure.</p>
+        </div>
+        <div class="glass hero-card">
+          <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Employment goal</span>
+          <p>Secure a backend engineering job immediately after graduation, ideally with internship experience beforehand.</p>
+        </div>
+      </div>
+      <p class="hero-note reveal-hero" style="--d:340ms">This roadmap prioritizes <b>Java, Spring Boot, databases, distributed systems, cloud infrastructure, and AI-assisted engineering</b>.
+        Those choices align with a published Tamara Backend Engineer I description mentioning Java or Go, Spring Boot, SOLID, Docker/Kubernetes, cloud services, and Kafka/RabbitMQ.</p>
+      <p class="disclaimer reveal-hero" style="--d:400ms"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>It is an ambitious learning plan, not a guarantee of employment or an AI-proof career.</p>
+      <a class="scroll-cue reveal-hero" style="--d:480ms" href="#glance" aria-label="Scroll to the roadmap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></a>
+    </header>
+
+    <!-- ============ 1. AT A GLANCE ============ -->
+    <section class="section" id="glance">
+      <h2 class="section-title reveal"><span class="sec-num">1</span>Complete roadmap at a glance</h2>
+      <p class="section-sub reveal">Six-semester progression</p>
+      <div class="timeline reveal">
+          <a class="step glass c1" href="#sem-03">
+            <span class="step-num">03</span>
+            <span class="step-title">Java + Git + OOP</span>
+            <span class="step-theme">Programming foundation</span>
+          </a>
+          <a class="step glass c2" href="#sem-04">
+            <span class="step-num">04</span>
+            <span class="step-title">Spring Boot + SQL</span>
+            <span class="step-theme">Backend development</span>
+          </a>
+          <a class="step glass c3" href="#sem-05">
+            <span class="step-num">05</span>
+            <span class="step-title">Security + Cloud + DevOps</span>
+            <span class="step-theme">Production engineering</span>
+          </a>
+          <a class="step glass c4" href="#sem-06">
+            <span class="step-num">06</span>
+            <span class="step-title">Microservices + Kafka</span>
+            <span class="step-theme">Distributed fintech systems</span>
+          </a>
+          <a class="step glass c5" href="#sem-07">
+            <span class="step-num">07</span>
+            <span class="step-title">System Design + AI Agents</span>
+            <span class="step-theme">Reliability and intelligence</span>
+          </a>
+          <a class="step glass c6" href="#sem-08">
+            <span class="step-num">08</span>
+            <span class="step-title">Interviews + Capstone</span>
+            <span class="step-theme">Industry readiness</span>
+          </a>
+      </div>
+    </section>
+
+    <!-- ============ 2. SEMESTERS ============ -->
+    <section class="section" id="plan">
+      <h2 class="section-title reveal"><span class="sec-num">2</span>Semester-by-semester detailed study plan</h2>
+      <div class="semesters">
+        <article class="semester glass reveal c1" id="sem-03">
+          <header class="sem-head">
+            <span class="sem-num">03</span>
+            <div>
+              <p class="sem-kicker">Semester 3 · Programming foundation</p>
+              <h3>Master Java and developer fundamentals</h3>
+            </div>
+          </header>
+            <p class="sem-intro">Your university DSA and COAL courses remain the academic priority. The side-study goal is to transition confidently from C++ into professional Java development.</p>
+          <div class="sem-body">
+            <div class="sem-col">
+              <p class="col-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Side courses, in order</p>
+              <ol class="courses">
+                <li><b>Git and GitHub</b> — branches, merges, pull requests, rebasing basics.</li>
+                <li><b>Java fundamentals</b> — Java syntax, OOP, interfaces, abstract classes, collections, generics, exceptions.</li>
+                <li>SOLID principles and clean code.</li>
+                <li>Linux terminal fundamentals.</li>
+                <li>JUnit basics and debugging.</li>
+              </ol>
+              <div class="note ai"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg><div><span class="note-label">AI engineering track</span><p>Learn context engineering, structured prompts, AI code review, and responsible use of Claude Code or GitHub Copilot. Practice giving an agent a small, well-specified task and checking its output.</p></div></div>
+            </div>
+            <div class="sem-col">
+              <div class="project">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Java Banking Management System</h4>
+                <p>Accounts, transaction records, transfers, OOP-based design, unit tests, and a clean GitHub repository.</p>
+              </div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>You can independently build, test, debug, and explain a Java program.</p></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="semester glass reveal c2" id="sem-04">
+          <header class="sem-head">
+            <span class="sem-num">04</span>
+            <div>
+              <p class="sem-kicker">Semester 4 · Backend development</p>
+              <h3>Become a Java backend developer</h3>
+            </div>
+          </header>
+          <div class="sem-body">
+            <div class="sem-col">
+              <p class="col-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Side courses, in order</p>
+              <ol class="courses">
+                <li><b>Advanced Java</b> — streams, concurrency basics, JVM concepts.</li>
+                <li>Spring Framework and Spring Boot.</li>
+                <li>REST API design and HTTP fundamentals.</li>
+                <li><b>PostgreSQL</b> — SQL, joins, indexes, normalization, transactions.</li>
+                <li>Spring Data JPA and Hibernate.</li>
+                <li>JUnit, Mockito, and Spring Boot integration testing.</li>
+              </ol>
+              <div class="note ai"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg><div><span class="note-label">AI engineering track</span><p>Use AI to draft API specifications, identify edge cases, generate test suggestions, review database designs, and complete bounded coding tasks.</p></div></div>
+            </div>
+            <div class="sem-col">
+              <div class="project">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Banking REST API</h4>
+                <p>Implement real database-backed accounts, transfers, transaction history, validation, error handling, and tests.</p>
+              </div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>You can build a secure, tested Spring Boot REST API without needing step-by-step tutorial guidance.</p></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="semester glass reveal c3" id="sem-05">
+          <header class="sem-head">
+            <span class="sem-num">05</span>
+            <div>
+              <p class="sem-kicker">Semester 5 · Production engineering</p>
+              <h3>Build production-ready backend systems</h3>
+            </div>
+          </header>
+          <div class="sem-body">
+            <div class="sem-col">
+              <p class="col-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Side courses, in order</p>
+              <ol class="courses">
+                <li><b>Spring Security</b> — authentication, authorization, OAuth2 fundamentals.</li>
+                <li>Docker and Docker Compose.</li>
+                <li>Linux deployment and server administration.</li>
+                <li>GitHub Actions for CI/CD.</li>
+                <li><b>AWS fundamentals</b> — IAM, EC2, RDS, S3, networking.</li>
+                <li>Redis caching, basic observability and monitoring.</li>
+              </ol>
+              <div class="note ai"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg><div><span class="note-label">AI engineering track</span><p>Learn repository-aware coding agents, AI-assisted test generation, pull request review, and debugging CI/CD failures. Keep secrets and production credentials outside untrusted AI tools.</p></div></div>
+            </div>
+            <div class="sem-col">
+              <div class="project">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Cloud-Deployed Banking Backend</h4>
+                <p>Deploy your Semester 4 project with authentication, Docker, automated tests, CI/CD, structured logs, health checks, and monitoring.</p>
+              </div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Someone else can clone your repository, run its tests, and deploy the application using your documentation.</p></div></div>
+              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Start applying for backend internships during this stage rather than waiting for graduation.</p></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="semester glass reveal c4" id="sem-06">
+          <header class="sem-head">
+            <span class="sem-num">06</span>
+            <div>
+              <p class="sem-kicker">Semester 6 · Distributed fintech systems</p>
+              <h3>Distributed systems and fintech engineering</h3>
+            </div>
+          </header>
+          <div class="sem-body">
+            <div class="sem-col">
+              <p class="col-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Side courses, in order</p>
+              <ol class="courses">
+                <li>Microservices architecture and service communication.</li>
+                <li>Apache Kafka or RabbitMQ.</li>
+                <li><b>Distributed systems fundamentals</b> — consistency, fault tolerance, timeouts, retries.</li>
+                <li>Database isolation, concurrency, and transactions.</li>
+                <li>Idempotency, transactional outbox, event-driven architecture.</li>
+                <li><b>Payment systems basics</b> — transaction lifecycle, ledgers, reconciliation.</li>
+              </ol>
+              <div class="note ai"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg><div><span class="note-label">AI engineering track</span><p>Begin Python, LLM APIs, structured outputs, tool calling, and AI application security. Learn how to expose authorized backend information to AI tools safely.</p></div></div>
+            </div>
+            <div class="sem-col">
+              <div class="project">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Distributed Payment Processing Simulator</h4>
+                <p>Build wallet/accounts, payment requests, ledger entries, asynchronous events, webhook handling, duplicate-request protection, and failed-payment recovery.</p>
+              </div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Demonstrate why retries don&#x27;t result in duplicate transfers and how the ledger remains consistent.</p></div></div>
+              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Aim to obtain a backend internship by this stage. Apply more widely than Tamara so you gain real team experience.</p></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="semester glass reveal c5" id="sem-07">
+          <header class="sem-head">
+            <span class="sem-num">07</span>
+            <div>
+              <p class="sem-kicker">Semester 7 · Reliability and intelligence</p>
+              <h3>Advanced system design and AI engineering</h3>
+            </div>
+          </header>
+          <div class="sem-body">
+            <div class="sem-col">
+              <p class="col-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Side courses, in order</p>
+              <ol class="courses">
+                <li><b>High-level system design</b> — load balancing, caching, sharding, scaling.</li>
+                <li>Advanced distributed systems and reliability.</li>
+                <li>Kubernetes fundamentals.</li>
+                <li><b>Observability</b> — OpenTelemetry, distributed tracing, metrics.</li>
+                <li>Load testing, performance profiling, and incident response.</li>
+                <li>Go fundamentals, only after your Java skills are strong.</li>
+              </ol>
+              <div class="note ai"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg><div><span class="note-label">AI engineering track</span><p>Study RAG, embeddings, vector search, AI agent orchestration, MCP, tool permissions, evaluation datasets, tracing, and human approval workflows.</p></div></div>
+            </div>
+            <div class="sem-col">
+              <div class="project">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final project</span>
+                <h4>Fintech Operations Platform with AI Assistant</h4>
+                <p>Extend your payment simulator with failure dashboards, monitoring, alerts, and an AI assistant that explains incidents using real logs and telemetry. Give the assistant read-only access initially.</p>
+              </div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Explain system behavior during load spikes, message duplication, service failures, and incorrect AI-generated diagnoses.</p></div></div>
+              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Begin serious preparation for Tamara-style Java, SQL, distributed-systems, and backend interviews.</p></div></div>
+            </div>
+          </div>
+        </article>
+        <article class="semester glass reveal c6" id="sem-08">
+          <header class="sem-head">
+            <span class="sem-num">08</span>
+            <div>
+              <p class="sem-kicker">Semester 8 · Industry readiness</p>
+              <h3>Industry readiness and job applications</h3>
+            </div>
+          </header>
+          <div class="sem-body">
+            <div class="sem-col">
+              <p class="col-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Side courses, in order</p>
+              <ol class="courses">
+                <li>DSA interview practice using Java.</li>
+                <li><b>Low-level design</b> — classes, interfaces, SOLID, design patterns.</li>
+                <li><b>High-level design</b> — wallets, payments, event-driven systems.</li>
+                <li>Advanced Spring Boot and SQL interview revision.</li>
+                <li>Concurrency, debugging, and distributed systems revision.</li>
+                <li>Behavioral interviews, teamwork, architecture presentations, and technical writing.</li>
+              </ol>
+              <div class="note ai"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg><div><span class="note-label">AI engineering track</span><p>Practice complete AI-assisted delivery workflows, security review, evaluation, AI-supported incident response, and cost/reliability trade-offs.</p></div></div>
+            </div>
+            <div class="sem-col">
+              <div class="project">
+                <span class="note-label"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>Final capstone</span>
+                <h4>Production-Style Fintech Backend Platform</h4>
+                <p>Polish the strongest project from Semesters 6–7. Include architecture diagrams, automated tests, deployment, observability, security considerations, a performance report, and a reliable AI feature.</p>
+              </div>
+              <div class="note test"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><div><span class="note-label">Completion test</span><p>Confidently defend every architectural decision and complete realistic technical interviews without AI help.</p></div></div>
+              <div class="note milestone"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="note-label">Career milestone</span><p>Apply for eligible Tamara junior engineering vacancies and graduate opportunities before graduation, while keeping other fintech and backend companies as parallel targets.</p></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 3. RESOURCES ============ -->
+    <section class="section" id="resources">
+      <h2 class="section-title reveal"><span class="sec-num">3</span>Recommended course resources</h2>
+      <p class="callout glass reveal"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>Use <b>one primary resource per topic</b> rather than collecting multiple courses and never completing them.</p>
+          <div class="res-group reveal c1">
+            <p class="res-head"><span class="dot"></span>Semester 3 · Java + Git + OOP</p>
+            <div class="res-grid">
+              <a class="res" href="https://learngitbranching.js.org/" target="_blank" rel="noopener">
+                <span class="res-topic">Git and GitHub</span>
+                <span class="res-name">Learn Git Branching</span>
+                <span class="res-meta">Interactive visual lessons<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">
+                <span class="res-topic">Git in depth</span>
+                <span class="res-name">Pro Git (book)</span>
+                <span class="res-meta">git-scm.com<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://java-programming.mooc.fi/" target="_blank" rel="noopener">
+                <span class="res-topic">Java fundamentals</span>
+                <span class="res-name">Java Programming MOOC</span>
+                <span class="res-meta">University of Helsinki<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://refactoring.guru/design-patterns" target="_blank" rel="noopener">
+                <span class="res-topic">SOLID and clean code</span>
+                <span class="res-name">Design Patterns &amp; SOLID</span>
+                <span class="res-meta">Refactoring.Guru<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://linuxcommand.org/tlcl.php" target="_blank" rel="noopener">
+                <span class="res-topic">Linux terminal</span>
+                <span class="res-name">The Linux Command Line</span>
+                <span class="res-meta">William Shotts<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://junit.org/junit5/docs/current/user-guide/" target="_blank" rel="noopener">
+                <span class="res-topic">JUnit and debugging</span>
+                <span class="res-name">JUnit 5 User Guide</span>
+                <span class="res-meta">junit.org<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">
+                <span class="res-topic">AI-assisted coding</span>
+                <span class="res-name">Claude Code docs</span>
+                <span class="res-meta">Anthropic<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">
+                <span class="res-topic">Prompt and context engineering</span>
+                <span class="res-name">Prompt engineering guide</span>
+                <span class="res-meta">Anthropic<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="res-group reveal c2">
+            <p class="res-head"><span class="dot"></span>Semester 4 · Spring Boot + SQL</p>
+            <div class="res-grid">
+              <a class="res" href="https://dev.java/learn/" target="_blank" rel="noopener">
+                <span class="res-topic">Advanced Java</span>
+                <span class="res-name">Learn Java (streams, concurrency, JVM)</span>
+                <span class="res-meta">dev.java · Oracle<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://spring.academy/courses" target="_blank" rel="noopener">
+                <span class="res-topic">Spring Boot</span>
+                <span class="res-name">Spring Academy courses</span>
+                <span class="res-meta">Broadcom / Spring team<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://spring.io/guides" target="_blank" rel="noopener">
+                <span class="res-topic">Spring Boot (hands-on)</span>
+                <span class="res-name">Spring Guides</span>
+                <span class="res-meta">spring.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://developer.mozilla.org/en-US/docs/Web/HTTP" target="_blank" rel="noopener">
+                <span class="res-topic">REST and HTTP</span>
+                <span class="res-name">HTTP documentation</span>
+                <span class="res-meta">MDN Web Docs<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.postgresql.org/docs/current/tutorial.html" target="_blank" rel="noopener">
+                <span class="res-topic">PostgreSQL</span>
+                <span class="res-name">PostgreSQL Tutorial</span>
+                <span class="res-meta">postgresql.org<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://15445.courses.cs.cmu.edu/" target="_blank" rel="noopener">
+                <span class="res-topic">Databases in depth</span>
+                <span class="res-name">Intro to Database Systems (15-445)</span>
+                <span class="res-meta">Carnegie Mellon University<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.spring.io/spring-data/jpa/reference/" target="_blank" rel="noopener">
+                <span class="res-topic">Spring Data JPA / Hibernate</span>
+                <span class="res-name">Spring Data JPA reference</span>
+                <span class="res-meta">spring.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.spring.io/spring-boot/reference/testing/index.html" target="_blank" rel="noopener">
+                <span class="res-topic">Testing</span>
+                <span class="res-name">Spring Boot testing + Mockito</span>
+                <span class="res-meta">spring.io · mockito.org<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="res-group reveal c3">
+            <p class="res-head"><span class="dot"></span>Semester 5 · Security + Cloud + DevOps</p>
+            <div class="res-grid">
+              <a class="res" href="https://docs.spring.io/spring-security/reference/" target="_blank" rel="noopener">
+                <span class="res-topic">Spring Security</span>
+                <span class="res-name">Spring Security reference</span>
+                <span class="res-meta">spring.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.oauth.com/" target="_blank" rel="noopener">
+                <span class="res-topic">OAuth2</span>
+                <span class="res-name">OAuth 2.0 Simplified</span>
+                <span class="res-meta">oauth.com<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">
+                <span class="res-topic">Docker and Compose</span>
+                <span class="res-name">Docker: Get started</span>
+                <span class="res-meta">docs.docker.com<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.github.com/en/actions" target="_blank" rel="noopener">
+                <span class="res-topic">CI/CD</span>
+                <span class="res-name">GitHub Actions documentation</span>
+                <span class="res-meta">GitHub<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://skillbuilder.aws/" target="_blank" rel="noopener">
+                <span class="res-topic">AWS fundamentals</span>
+                <span class="res-name">AWS Skill Builder (Cloud Practitioner Essentials)</span>
+                <span class="res-meta">Amazon Web Services<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://university.redis.io/" target="_blank" rel="noopener">
+                <span class="res-topic">Redis caching</span>
+                <span class="res-name">Redis University</span>
+                <span class="res-meta">Redis<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="res-group reveal c4">
+            <p class="res-head"><span class="dot"></span>Semester 6 · Microservices + Kafka</p>
+            <div class="res-grid">
+              <a class="res" href="https://microservices.io/patterns/" target="_blank" rel="noopener">
+                <span class="res-topic">Microservices and patterns</span>
+                <span class="res-name">Microservice Architecture patterns</span>
+                <span class="res-meta">microservices.io · Chris Richardson<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://developer.confluent.io/courses/" target="_blank" rel="noopener">
+                <span class="res-topic">Apache Kafka</span>
+                <span class="res-name">Kafka courses</span>
+                <span class="res-meta">Confluent Developer<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.rabbitmq.com/tutorials" target="_blank" rel="noopener">
+                <span class="res-topic">RabbitMQ (alternative)</span>
+                <span class="res-name">RabbitMQ tutorials</span>
+                <span class="res-meta">rabbitmq.com<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://dataintensive.net/" target="_blank" rel="noopener">
+                <span class="res-topic">Distributed systems</span>
+                <span class="res-name">Designing Data-Intensive Applications</span>
+                <span class="res-meta">Martin Kleppmann<span class="cost paid">Paid book</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://jepsen.io/consistency" target="_blank" rel="noopener">
+                <span class="res-topic">Isolation and consistency</span>
+                <span class="res-name">Consistency models</span>
+                <span class="res-meta">Jepsen<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://brandur.org/idempotency-keys" target="_blank" rel="noopener">
+                <span class="res-topic">Idempotency</span>
+                <span class="res-name">Implementing Stripe-like idempotency keys</span>
+                <span class="res-meta">Brandur Leach<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.moderntreasury.com/journal/accounting-for-developers-part-i" target="_blank" rel="noopener">
+                <span class="res-topic">Payments and ledgers</span>
+                <span class="res-name">Accounting for Developers</span>
+                <span class="res-meta">Modern Treasury<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener">
+                <span class="res-topic">Python</span>
+                <span class="res-name">The Python Tutorial</span>
+                <span class="res-meta">python.org<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://docs.claude.com/en/docs/build-with-claude/tool-use" target="_blank" rel="noopener">
+                <span class="res-topic">LLM APIs and tool calling</span>
+                <span class="res-name">Tool use with Claude</span>
+                <span class="res-meta">Anthropic<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://genai.owasp.org/llm-top-10/" target="_blank" rel="noopener">
+                <span class="res-topic">AI application security</span>
+                <span class="res-name">OWASP Top 10 for LLM Applications</span>
+                <span class="res-meta">OWASP<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="res-group reveal c5">
+            <p class="res-head"><span class="dot"></span>Semester 7 · System Design + AI Agents</p>
+            <div class="res-grid">
+              <a class="res" href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener">
+                <span class="res-topic">High-level system design</span>
+                <span class="res-name">The System Design Primer</span>
+                <span class="res-meta">GitHub · donnemartin<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://pdos.csail.mit.edu/6.824/" target="_blank" rel="noopener">
+                <span class="res-topic">Distributed systems (advanced)</span>
+                <span class="res-name">MIT 6.5840 Distributed Systems</span>
+                <span class="res-meta">MIT<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://sre.google/sre-book/table-of-contents/" target="_blank" rel="noopener">
+                <span class="res-topic">Reliability</span>
+                <span class="res-name">Site Reliability Engineering (book)</span>
+                <span class="res-meta">Google<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" target="_blank" rel="noopener">
+                <span class="res-topic">Kubernetes</span>
+                <span class="res-name">Kubernetes basics</span>
+                <span class="res-meta">kubernetes.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://opentelemetry.io/docs/" target="_blank" rel="noopener">
+                <span class="res-topic">Observability</span>
+                <span class="res-name">OpenTelemetry documentation</span>
+                <span class="res-meta">opentelemetry.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://grafana.com/docs/k6/latest/" target="_blank" rel="noopener">
+                <span class="res-topic">Load testing</span>
+                <span class="res-name">k6 documentation</span>
+                <span class="res-meta">Grafana Labs<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://go.dev/tour/" target="_blank" rel="noopener">
+                <span class="res-topic">Go fundamentals</span>
+                <span class="res-name">A Tour of Go</span>
+                <span class="res-meta">go.dev<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.anthropic.com/engineering/building-effective-agents" target="_blank" rel="noopener">
+                <span class="res-topic">AI agents</span>
+                <span class="res-name">Building effective agents</span>
+                <span class="res-meta">Anthropic<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://modelcontextprotocol.io/" target="_blank" rel="noopener">
+                <span class="res-topic">MCP</span>
+                <span class="res-name">Model Context Protocol</span>
+                <span class="res-meta">modelcontextprotocol.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.pinecone.io/learn/retrieval-augmented-generation/" target="_blank" rel="noopener">
+                <span class="res-topic">RAG and vector search</span>
+                <span class="res-name">Retrieval-Augmented Generation</span>
+                <span class="res-meta">Pinecone Learn<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="res-group reveal c6">
+            <p class="res-head"><span class="dot"></span>Semester 8 · Interviews + Capstone</p>
+            <div class="res-grid">
+              <a class="res" href="https://neetcode.io/roadmap" target="_blank" rel="noopener">
+                <span class="res-topic">DSA interviews (Java)</span>
+                <span class="res-name">NeetCode roadmap</span>
+                <span class="res-meta">neetcode.io<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://refactoring.guru/design-patterns" target="_blank" rel="noopener">
+                <span class="res-topic">Low-level design</span>
+                <span class="res-name">Design patterns catalog</span>
+                <span class="res-meta">Refactoring.Guru<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction" target="_blank" rel="noopener">
+                <span class="res-topic">High-level design interviews</span>
+                <span class="res-name">System Design in a Hurry</span>
+                <span class="res-meta">Hello Interview<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://jcip.net/" target="_blank" rel="noopener">
+                <span class="res-topic">Concurrency</span>
+                <span class="res-name">Java Concurrency in Practice</span>
+                <span class="res-meta">Brian Goetz et al.<span class="cost paid">Paid book</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.techinterviewhandbook.org/" target="_blank" rel="noopener">
+                <span class="res-topic">Behavioral interviews</span>
+                <span class="res-name">Tech Interview Handbook</span>
+                <span class="res-meta">techinterviewhandbook.org<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+              <a class="res" href="https://www.anthropic.com/learn" target="_blank" rel="noopener">
+                <span class="res-topic">AI engineering courses</span>
+                <span class="res-name">Anthropic courses</span>
+                <span class="res-meta">Anthropic<span class="cost free">Free</span></span>
+                <svg class="ic res-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+          </div>
+    </section>
+
+    <!-- ============ 4. WEEKLY ============ -->
+    <section class="section" id="weekly">
+      <h2 class="section-title reveal"><span class="sec-num">4</span>Weekly study routine</h2>
+      <p class="section-sub reveal">For an initial commitment of 10 hours outside university. Adjust downward during FAST midterms and finals.</p>
+      <div class="weekly glass reveal">
+        <div class="weekly-total"><span>Your weekly commitment</span><b>10 hours</b></div>
+        <div class="stack" role="img" aria-label="4 hours main course, 3 hours project, 2 hours AI practice, 1 hour revision">
+          <span class="w1" style="--h:4"></span><span class="w2" style="--h:3"></span><span class="w3" style="--h:2"></span><span class="w4" style="--h:1"></span>
+        </div>
+        <ul class="weekly-list">
+          <li><span class="sw w1"></span>Main semester course<b>4.0h</b></li>
+          <li><span class="sw w2"></span>Practical backend project<b>3.0h</b></li>
+          <li><span class="sw w3"></span>AI engineering practice<b>2.0h</b></li>
+          <li><span class="sw w4"></span>Revision and interview practice<b>1.0h</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 5. CHECKLIST ============ -->
+    <section class="section" id="checklist">
+      <h2 class="section-title reveal"><span class="sec-num">5</span>Your graduation readiness checklist</h2>
+      <div class="checklist glass reveal">
+        <div class="check-head">
+          <div class="ring" id="ring" style="--p:0"><span id="ring-text">0/10</span></div>
+          <div>
+            <p class="check-title">Target competencies</p>
+            <p class="check-sub">Tick each one when you can do it confidently. Your progress is saved in this browser.</p>
+            <button type="button" class="reset" id="reset">Reset</button>
+          </div>
+        </div>
+        <div class="checks">
+            <label class="check"><input type="checkbox" data-id="c0" /><span class="box"></span><span class="check-text">Build, test, debug and explain a Java program on my own</span></label>
+            <label class="check"><input type="checkbox" data-id="c1" /><span class="box"></span><span class="check-text">Use Git and GitHub confidently: branches, pull requests, rebasing</span></label>
+            <label class="check"><input type="checkbox" data-id="c2" /><span class="box"></span><span class="check-text">Build a secure, tested Spring Boot REST API without a tutorial</span></label>
+            <label class="check"><input type="checkbox" data-id="c3" /><span class="box"></span><span class="check-text">Design PostgreSQL schemas with indexes, normalization and transactions</span></label>
+            <label class="check"><input type="checkbox" data-id="c4" /><span class="box"></span><span class="check-text">Containerize, test and deploy a service with Docker and CI/CD</span></label>
+            <label class="check"><input type="checkbox" data-id="c5" /><span class="box"></span><span class="check-text">Run a backend on AWS with logs, health checks and monitoring</span></label>
+            <label class="check"><input type="checkbox" data-id="c6" /><span class="box"></span><span class="check-text">Build event-driven services with Kafka or RabbitMQ</span></label>
+            <label class="check"><input type="checkbox" data-id="c7" /><span class="box"></span><span class="check-text">Prove retries never cause duplicate transfers and the ledger stays consistent</span></label>
+            <label class="check"><input type="checkbox" data-id="c8" /><span class="box"></span><span class="check-text">Ship a safe AI feature: LLM APIs, tool permissions, evaluations, human approval</span></label>
+            <label class="check"><input type="checkbox" data-id="c9" /><span class="box"></span><span class="check-text">Pass DSA, design and backend interviews in Java without AI help</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. TAMARA ============ -->
+    <section class="section" id="tamara">
+      <h2 class="section-title reveal"><span class="sec-num">6</span>Important Tamara hiring consideration</h2>
+      <div class="warning glass reveal">
+        <svg class="ic warn-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        <div>
+          <p>However, a previous Backend Engineer I Builders Program description specifically targeted Saudi graduates. I cannot confirm whether the current program accepts you as a Pakistani applicant. Regular engineering vacancies may have different requirements.</p>
+          <p>That is why your plan should be <b>Tamara-targeted but not Tamara-dependent</b>: develop engineering skills that qualify you to compete for backend positions at fintech companies internationally.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STRATEGY ============ -->
+    <section class="section" id="strategy">
+      <h2 class="section-title reveal"><span class="sec-num"><svg class="ic " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></svg></span>Your final learning strategy</h2>
+      <div class="split reveal" aria-hidden="true"><span class="s1" style="--w:70"></span><span class="s2" style="--w:20"></span><span class="s3" style="--w:10"></span></div>
+      <div class="strategy">
+        <div class="glass strat s1 reveal"><b>70%</b><h3>Deep backend engineering</h3><p>Java, Spring Boot, SQL, distributed systems, system design, cloud, and production reliability.</p></div>
+        <div class="glass strat s2 reveal"><b>20%</b><h3>AI-native engineering</h3><p>AI-assisted development from Semester 3, with LLM APIs and agents added when your backend foundations are ready.</p></div>
+        <div class="glass strat s3 reveal"><b>10%</b><h3>Career preparation</h3><p>GitHub portfolio, interview practice, applications, communication, and professional connections.</p></div>
+      </div>
+      <p class="section-sub center reveal">The percentages are a suggested overall emphasis, not a rigid weekly formula.</p>
+      <blockquote class="principle glass reveal">
+        <svg class="ic q-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+        <p><span class="note-label">Your guiding principle</span>Become the engineer who understands how systems should behave, can build and operate them, and knows how to use AI safely to increase the speed and quality of engineering work. That is a stronger long-term strategy than relying on AI to generate code without understanding it.</p>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer>
+    <p>Roadmap by <a href="https://ubaidafzal01.github.io/Ubaid-Afzal/">Ubaid Afzal</a> · FAST BSCS</p>
+  </footer>
+
+  <script src="fluid.js?v=1"></script>
+  <script src="script.js?v=1"></script>
+</body>
+</html>
