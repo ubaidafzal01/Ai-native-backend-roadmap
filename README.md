@@ -18,8 +18,8 @@ Java, Spring Boot, databases, distributed systems, cloud infrastructure and AI-a
 | # | Section | What's inside |
 | --- | --- | --- |
 | 1 | **Roadmap at a glance** | The six-semester progression, from *Java + Git + OOP* to *Interviews + Capstone* |
-| 2 | **Semester-by-semester plan** | Side courses in order, an AI engineering track, a final project, a completion test and career milestones for every semester |
-| 3 | **Learning resources** | 48 hand-picked courses, books and docs, one primary resource per topic, each tagged *Free* or *Paid* |
+| 2 | **Semester-by-semester plan** | Side courses in order, an AI engineering track, a build-it-from-scratch final project with its YouTube guide, a completion test and career milestones for every semester |
+| 3 | **Learning resources** | 53 hand-picked courses, books and docs, one primary resource per topic, each tagged *Free* or *Paid* |
 | 4 | **Weekly study routine** | How 10 hours a week split across course work, projects, AI practice and revision |
 | 5 | **Readiness checklist** | 10 target competencies to tick off, with a progress ring saved in your browser |
 | 6 | **Tamara hiring consideration** | Why the plan is Tamara-targeted but not Tamara-dependent |
@@ -29,14 +29,14 @@ Java, Spring Boot, databases, distributed systems, cloud infrastructure and AI-a
 
 ## 🗺️ The six semesters
 
-| Semester | Focus | Final project |
-| --- | --- | --- |
-| **03** | Java + Git + OOP | Java Banking Management System |
-| **04** | Spring Boot + SQL | Banking REST API |
-| **05** | Security + Cloud + DevOps | Cloud-Deployed Banking Backend |
-| **06** | Microservices + Kafka | Distributed Payment Processing Simulator |
-| **07** | System Design + AI Agents | Fintech Operations Platform with AI Assistant |
-| **08** | Interviews + Capstone | Production-Style Fintech Backend Platform |
+| Semester | Focus | Final project | Project guide |
+| --- | --- | --- | --- |
+| **03** | Java + Git + OOP | Build Your Own Redis in Java | [Reinventing D Wheel](https://www.youtube.com/playlist?list=PLUtdCvEWBvma4DTjQdH5qCV4NIxqhOfDo) |
+| **04** | Spring Boot + SQL | Write a Database from Scratch | [Code With Sep](https://www.youtube.com/playlist?list=PLWRwj01AnyEtjaw-ZnnAQWnVYPZF5WayV) |
+| **05** | Security + Cloud + DevOps | Build Your Own Private Search Engine | [NetworkChuck](https://www.youtube.com/watch?v=ifT6npY39Dw) |
+| **06** | Microservices + Kafka | Build Self-Learning AI Agents (Python) | [Dave Ebbelaar](https://www.youtube.com/watch?v=ynhl8KjjS3Y) |
+| **07** | System Design + AI Agents | C++ Compiler in C++ | [lolzdev](https://www.youtube.com/watch?v=J-_yoKCxhYk) |
+| **08** | Interviews + Capstone | Production-Grade Distributed Redis | Your Semester 3 project, grown up |
 
 ![Learning resources](screenshots/resources.jpg)
 

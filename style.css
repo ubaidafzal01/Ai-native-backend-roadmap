@@ -214,6 +214,23 @@ h1 {
 .project h4 { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 6px; }
 .project p { color: var(--text-2); font-size: 14.5px; }
 
+.guides { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+.guide {
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 12px; border-radius: 14px;
+  background: rgba(255, 255, 255, .8); border: 1px solid var(--border);
+  transition: transform .2s, box-shadow .2s, border-color .2s;
+}
+.guide:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0, 0, 0, .07); border-color: #ff0033; }
+.guide b { display: block; font-size: 14px; font-weight: 650; color: var(--text); line-height: 1.3; }
+.guide small { display: block; font-size: 12.5px; color: var(--muted); }
+.yt { width: 30px; height: 30px; flex: none; }
+.g-arrow { width: 15px; height: 15px; margin-left: auto; color: var(--muted); }
+.guide:hover .g-arrow { color: #ff0033; }
+.note.why > .ic, .note.why .note-label { color: var(--accent); }
+.res-guide { border-color: rgba(255, 0, 51, .25); background: linear-gradient(135deg, rgba(255, 241, 242, .8), rgba(255, 255, 255, .6)); }
+.res-guide .res-topic { color: #e11d48; }
+
 /* ===== 3. Resources ===== */
 .callout {
   display: flex; align-items: center; gap: 10px;
