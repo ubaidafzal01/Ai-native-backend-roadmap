@@ -240,6 +240,24 @@ h1 {
 .side h4 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
 .side p { color: var(--text-2); font-size: 14px; }
 
+.build-label {
+  display: flex; align-items: center; gap: 7px;
+  margin: 16px 0 10px;
+  font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--accent);
+}
+.build-label .ic { width: 15px; height: 15px; }
+.build { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.build li {
+  padding: 10px 12px; border-radius: 12px;
+  background: rgba(255, 255, 255, .78); border: 1px solid rgba(228, 228, 231, .9);
+  font-size: 14px; line-height: 1.5; color: var(--text-2);
+}
+.tag {
+  display: inline-block; margin: 0 8px 2px 0; padding: 1px 8px; border-radius: 999px;
+  font-size: 11px; font-weight: 700; letter-spacing: .02em; vertical-align: 1px;
+  color: var(--accent); background: var(--tint);
+}
+
 /* ===== 3. Resources ===== */
 .callout {
   display: flex; align-items: center; gap: 10px;
